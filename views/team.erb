@@ -6,7 +6,17 @@
  </head>
  <body>
    <% params.each do |key, value| %>
-      <h2><%= "#{key}: #{value}" if key != "submit" %></h2>
+      <h1><%= if key == "Team Name"
+                "#{key}: #{value}" %>
+      </h1>
+
+      <h2><%= else
+                "#{key}: #{value}" if key != "submit"   %>
+      </h2>
+
+
+
+
    <% end %>
 
  </body>
