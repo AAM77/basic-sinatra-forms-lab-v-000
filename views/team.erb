@@ -6,10 +6,7 @@
  </head>
  <body>
    <% params.each do |key, value| %>
-        <h1><%= "#{key}: #{value}" if key == 'name' %></h2>
-      <% else %>
-            <h2><%= "#{key}: #{value}" if key != "submit" %></h2>
-      <% end %>
+        <h1><%= "#{key}: #{value}" if key == 'name' %></h1>
    <% end %>
 
  </body>
