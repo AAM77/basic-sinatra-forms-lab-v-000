@@ -7,6 +7,7 @@
  <body>
    <% params.each do |key, value| %>
       <h2><%= "#{key}: #{value}" %></h2>
+   <% if key != :submit %>
    <% end %>
 
  </body>
